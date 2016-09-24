@@ -20,29 +20,12 @@ assert discount(9.99, .25) == 7.4925
 # <a class="linkbar" href="http://store.steampowered.com/news/?appids=236090">
 
 watchlist = [
-#    # alex stuff
-#    (  7200, discount(29.99, .50), 'trackmania united'), # removed in favor of trackmania 2
-#    #(228760, discount(19.99, .25), 'trackmania 2 canyon'), # still on here, in case i want a copy
-#    #(232910, discount( 9.99, .25), 'trackmania 2 stadium'),
-#    #(233450, discount(29.99, .50), 'prison architect'), # not really for alex imo
-#    # my stuff
-#    (224440, discount(19.99, .30), 'folk tale'),
-#    (233980, discount( 7.99, .50), 'unepic'),
-#    (238240, discount(11.99, .50), 'edge of space'),          
-#    (241410, discount( 9.99, .30), 'castlestorm'),      
-#    (225280, discount(19.99, .50), 'full mojo rampage'),      
-#    (244710, discount( 9.99, .50), 'shelter'),      
-#    (231160, discount(14.99, .75), 'the swapper'),
-#    (250110, discount(14.99, .50), 'assault android cactus'),
     (218820, discount(14.99, .50), 'mercenary kings'),    
-#    (222640, discount(20.99, .70), 'aarklash'), # will buy at 70%+, was 40% at 2013 xmas
     (219830, discount(9.99, .50), 'king arthurs gold'),    
-#    # delver's drop, not on steam yet, greenlight
-#    # assault android cactus, not on steam yet, greenlight
 ]
 
 def is_work():
-    return socket.gethostname().lower() in ['mkesl','ganymede']   
+    return socket.gethostname().lower() in ['ganymede']   
 
 def get_price_and_html(appid):
 
